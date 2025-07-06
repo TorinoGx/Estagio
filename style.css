@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  background: #2f2f2f;
+}
+
+/* ===== NAVBAR ===== */
+header {
+  background: #3a3a3a;
+  padding: 20px 30px;
+  border-bottom: 3px solid #e49b34;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #1f1f1f;
+  border-radius: 0;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.balao-saiba {
+  position: absolute;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 14px;
+  border: 2px solid #e49b34;
+  border-radius: 10px;
+  max-width: 300px;
+  top: 69%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+  z-index: 10;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
