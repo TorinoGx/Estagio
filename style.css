@@ -80,3 +80,18 @@ nav ul li a:hover {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
   text-align: left;
 }
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
