@@ -171,6 +171,14 @@ figcaption {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
 }
+footer {
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  border-top: 3px solid #e49b34;
+}
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
