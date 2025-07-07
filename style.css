@@ -14,7 +14,6 @@ body {
   background: #2f2f2f;
 }
 
-/* ===== NAVBAR ===== */
 header {
   background: #3a3a3a;
   padding: 20px 30px;
@@ -80,6 +79,98 @@ nav ul li a:hover {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
   text-align: left;
 }
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to right, #4a4a4a, #2f2f2f);
+  border-top: 3px solid #e49b34;
+  border-bottom: 3px solid #e49b34;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+}
+
+#cta-btn {
+  padding: 12px 30px;
+  background: #595653;
+  border: 2px solid #e49b34;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#cta-btn:hover {
+  background: #1c1c1c;
+}
+
+section {
+  padding: 70px 30px;
+  text-align: center;
+  background: #3a3a3a;
+  color: #ffffff;
+  border-top: 2px solid #e49b34;
+}
+
+section:nth-child(even) {
+  background: #2f2f2f;
+}
+
+section h2 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+.galeria-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+figure {
+  max-width: 280px;
+  background: #3c3c3c;
+  color: #ffffff;
+  border: 2px solid #e49b34;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transform: scale(0.7);
+}
+
+figcaption {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e49b34;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -94,4 +185,17 @@ nav ul li a:hover {
   #menu-toggle {
     display: block;
   }
+   .galeria-imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    width: 90%;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
 }
+
